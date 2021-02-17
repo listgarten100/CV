@@ -1,0 +1,68 @@
+/* wrapper */
+* {
+    box-sizing: border-box;
+}
+
+.layout {
+  position: relative;
+
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
+//   border-left: 20px solid $brown;
+//   border-right: 20px solid $brown;
+}
+
+.content{
+    display: grid;
+    grid-template-areas: "aside main";
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.aside{
+    grid-area: aside;
+    background-color: #000;
+    border-left: 20px solid $brown;
+
+    &__inner{
+        padding: 0 26px 0 26px;
+    }
+}
+
+.main{
+    grid-area: main;
+    border-right: 20px solid $brown;
+}
+
+
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .layout {
+    width: 98%;
+  }
+}
+@media (min-width: 899px) and (max-width: 1199px) {
+  .layout {
+    width: 98%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 898px) {
+  .layout {
+    width: 98%;
+  }
+}
+
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .layout {
+    width: 98%;
+  }
+}
+
+@media (max-width: 599px) {
+  .layout {
+    width: 98%;
+  }
+}
