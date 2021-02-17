@@ -253,25 +253,38 @@ select {
   grid-gap: 36px;
 }
 
-.decor {
+.download {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.3fr 1fr;
   justify-self: end;
   margin-right: 30px;
 }
 
-.decor__stick {
+.download__stick {
   width: 4px;
   height: 330px;
   background-color: #500909;
 }
 
-.decor__square {
-  width: 68px;
-  height: 68px;
+.download__link {
   background-color: #500909;
   -ms-flex-item-align: end;
       align-self: end;
+  color: #fff;
+  padding: 20px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  border: none;
+}
+
+.download__link:hover {
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  opacity: 0.7;
 }
 
 .menu {
