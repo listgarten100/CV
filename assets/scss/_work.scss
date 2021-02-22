@@ -21,7 +21,7 @@
         flex-direction: column;
         align-items: center;
         position: relative;
-        padding-top: 52px;
+        padding-top: 32px;
     }
 
     &__item{
@@ -33,7 +33,7 @@
         
 
         &:nth-child(2) {
-            margin-right: 69px;
+            margin-right: 65px;
             margin-left: auto;
         }
     }
@@ -45,6 +45,7 @@
         padding: 20px 10px;
         display: grid;
         grid-gap: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
 
     &__desc--white{
@@ -71,8 +72,9 @@
 
     &__desc-duties{
         font-size: 16px;
-        font-family: $font2;
+        font-family: $font1;
         color: $black;
+        line-height: 20px;
     }
 
     &__decor{
@@ -80,6 +82,10 @@
         align-items: center;
         position: relative;
 
+    }
+
+    &__decor--resp{
+        display: none;
     }
 
     &__decor-horizStick{
@@ -95,19 +101,21 @@
         background-color: #abaaaa;
         display: grid;
         margin-right: 30px;
-
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
     }
 
     &__decor-vertStick--white{
         margin-right: 0;
         margin-left: 30px;
+        height: 178px;
         background-color: #ededed;
  
     }
 
     &__decor-vertStick--gray{
         background-color: #dedede;
+        height: 178px;
     }
 
 
@@ -123,11 +131,14 @@
 
     &__date{
         font-size: 36px;
-        font-weight: 500;
-        font-family: $font1;
-        font-style: italic;
+        // font-weight: 700;
+        font-family: $font2;
+        // font-style: italic;
     }
 
+    &__date--resp{
+        display: none;
+    }
     // &__date--right{
     //     padding-left: 26px;
     // }
@@ -137,3 +148,310 @@
     // }
 }
 
+
+@media (min-width: 1000px) and (max-width: 1279px) {
+
+    .headline{
+        font-size: 28px;
+    }
+  
+    .work{
+
+        &__inner{
+            padding: 80px 20px 0 20px;
+        }
+    
+        &__desc{
+        //    display: none;
+        }
+
+        &__list{
+           display: grid;
+           justify-content: center;
+           grid-gap: 20px;
+        }
+        &__item{
+            margin: 0;
+            justify-content: start;
+
+            &:nth-child(2){
+                margin: 0;
+            }
+        }
+
+        &__decor--resp{
+            display: flex;
+        }
+
+        &__decor--main{
+            display: none;
+        }
+
+        &__decor-vertStick{
+            margin-right: 15px;
+        }
+
+        &__decor-vertStick--white{
+            margin: 0;
+        }
+        &__decor-vertStick--sm{
+            height: 120px;
+        }
+
+        &__date{
+            font-size: 24px;
+        }
+
+        &__date--second{
+            display: none;
+        }
+
+        &__date--resp{
+            display: inline;
+            margin-left: 15px;
+        }
+    }
+    
+    }
+
+
+
+
+
+
+    
+@media (min-width: 768px) and (max-width: 999px) {
+
+    .headline{
+        font-size: 28px;
+    }
+  
+    .work{
+
+        &__inner{
+            padding: 80px 20px 0 20px;
+        }
+    
+        &__desc{
+        //    display: none;
+        width: 240px;
+        }
+
+        &__desc-title{
+            font-size: 18px;
+        }
+
+        &__desc-duties{
+            font-size: 14px;
+        }
+
+        &__list{
+           display: grid;
+           justify-content: center;
+           grid-gap: 20px;
+        }
+        &__item{
+            margin: 0;
+            justify-content: start;
+
+            &:nth-child(2){
+                margin: 0;
+            }
+        }
+
+        &__decor--resp{
+            display: flex;
+        }
+
+        &__decor--main{
+            display: none;
+        }
+
+        &__decor-vertStick{
+            margin-right: 15px;
+        }
+
+        &__decor-vertStick--white{
+            margin: 0;
+        }
+        &__decor-vertStick--sm{
+            height: 120px;
+        }
+
+        &__date{
+            font-size: 16px;
+        }
+
+        &__date--second{
+            display: none;
+        }
+
+        &__date--resp{
+            display: inline;
+            margin-left: 15px;
+        }
+    }
+    
+    }
+
+
+    @media (min-width: 500px) and (max-width: 767px) {
+
+        .headline{
+            font-size: 28px;
+        }
+      
+        .work{
+            // display: none;
+            &__inner{
+                padding: 80px 20px 0 20px;
+            }
+        
+            &__desc{
+            //    display: none;
+            width: 240px;
+            }
+    
+            &__desc-title{
+                font-size: 18px;
+            }
+    
+            &__desc-duties{
+                font-size: 14px;
+            }
+    
+            &__list{
+               display: grid;
+               justify-content: center;
+               grid-gap: 20px;
+            }
+            &__item{
+                margin: 0;
+                justify-content: start;
+    
+                &:nth-child(2){
+                    margin: 0;
+                }
+            }
+    
+            &__decor--resp{
+                display: flex;
+            }
+    
+            &__decor--main{
+                display: none;
+            }
+    
+            &__decor-vertStick{
+                margin-right: 15px;
+            }
+    
+            &__decor-vertStick--white{
+                margin: 0;
+            }
+            &__decor-vertStick--sm{
+                height: 120px;
+            }
+    
+            &__date{
+                font-size: 16px;
+            }
+    
+            &__date--second{
+                display: none;
+            }
+    
+            &__date--resp{
+                display: inline;
+                margin-left: 15px;
+            }
+        }
+        
+        }
+
+
+
+        @media (min-width: 320px) and (max-width: 499px) {
+
+            .headline{
+                font-size: 22px;
+            }
+          
+            .work{
+                // display: none;
+                &__inner{
+                    padding: 80px 20px 0 20px;
+                }
+            
+                &__desc{
+                //    display: none;
+                width: 140px;
+                }
+        
+                &__desc-title{
+                    font-size: 14px;
+                }
+
+                &__desc-company{
+                    font-size: 12px;
+                }
+        
+                &__desc-duties{
+                    font-size: 11px;
+                    line-height: 16px;
+                }
+        
+                &__list{
+                   display: grid;
+                   justify-content: center;
+                   grid-gap: 20px;
+                }
+                &__item{
+                    margin: 0;
+                    justify-content: start;
+        
+                    &:nth-child(2){
+                        margin: 0;
+                    }
+                }
+        
+                &__decor--resp{
+                    display: flex;
+                }
+        
+                &__decor--main{
+                    display: none;
+                }
+
+                &__decor-horizStick{
+                    width: 16px;
+                }
+        
+                &__decor-vertStick{
+                    margin-right: 15px;
+                    height: 195px;
+                    width: 16px;
+                }
+        
+                &__decor-vertStick--white{
+                    margin: 0;
+                }
+                &__decor-vertStick--sm{
+                    height: 132px;
+                }
+        
+                &__date{
+                    font-size: 15px;
+                }
+        
+                &__date--second{
+                    display: none;
+                }
+        
+                &__date--resp{
+                    display: inline;
+                    margin-left: 15px;
+                }
+            }
+            
+            }

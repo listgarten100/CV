@@ -1,17 +1,18 @@
 .title{
     position: absolute;
-    left: 54px;
+    left: 58px;
     top: 100px;
     display: grid;
     grid-gap: 26px;
 
 
    &__greeting{
-       font-size: 34px;
-       font-family: $font2;
-       font-weight: 700;
+       font-size: 56px;
+       font-family: 'Marck Script', sans-serif;
+        // font-family: $font2;
+    //    font-weight: 700;
        color: #fff;
-       font-style: italic;
+    //    font-style: italic;
    } 
 
    &__name{
@@ -19,9 +20,9 @@
     font-family: $font1;
     font-weight: 700;
     color: #fff;
-    font-style: italic;
+    // font-style: italic;
     text-transform: uppercase;
-    letter-spacing: 8px;
+    letter-spacing: 10px;
    }
 
    &__name--black{
@@ -48,3 +49,67 @@
 }
 
 
+
+@media (min-width: 1000px) and (max-width: 1279px) {
+  
+    .title{
+        display: none;
+    
+    
+            // display: none;
+        //    width: 220px;
+        
+    }
+
+    
+    
+    }
+
+
+
+    @media (min-width: 768px) and (max-width: 999px) {
+  
+        .title{
+            display: none;
+        
+        
+                // display: none;
+            //    width: 220px;
+            
+        }
+    
+        
+        
+        }
+
+
+        @media (min-width: 500px) and (max-width: 767px) {
+  
+            .title{
+                display: none;
+            
+            
+                    // display: none;
+                //    width: 220px;
+                
+            }
+        
+            
+            
+            }
+
+
+            @media (min-width: 320px) and (max-width: 499px) {
+  
+                .title{
+                    display: none;
+                
+                
+                        // display: none;
+                    //    width: 220px;
+                    
+                }
+            
+                
+                
+                }

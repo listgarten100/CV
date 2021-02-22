@@ -3,8 +3,7 @@
     position: relative;
 
     &__inner{
-        margin-top: 130px;
-        // padding-bottom: 60px; 
+        padding-top: 130px;
     }
 
     &__list{
@@ -17,81 +16,157 @@
     &__item{
         position: relative;
         display: grid;
-        // grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
-        // justify-content: space-between;
-        // margin-bottom: -30px;
-        border-bottom: 4px solid #5b5959;
-    
-        &::after{
-            content: '';
-            display: block;
-            width: 350px;
-            height: 4px;
-            margin-bottom: -6px;
-            // margin-top: 26px;
-            background-color: #fff;
-        }
-
-        &:nth-child(4), &:nth-child(5), &:nth-child(6), &:nth-child(7) {
-
-            &::after{
-                width: 290px;  
-            }
-        }
-
-        
-        &:nth-child(8) {
-
-            &::after{
-                width: 220px;  
-            }
-        }
-       
-        &:nth-child(9) {
-
-            &::after{
-                width: 170px;  
-            }
-        } 
-
-    }
+     }
 
     &__name{
         font-size: 25px;
         font-family: $font2;
         color: #fff;
     }
-    &__percent{
-        position: absolute;
-        right: 13%;
-        bottom: -13px;
-    }
+
 
    &__number{
-    font-size: 22px;
-    font-family: $font1;
-    color: #fff;
-    // padding-right: 50px;
+        position: absolute;
+        right: 0;
+        font-size: 22px;
+        font-family: $font1;
+        color: #fff;
    }
 
    &__circle{
-  
-       width: 22px;
-       height: 22px;
-       background-color: #fff;
-       border-radius: 50%;
-       margin-top: 15px;
-   
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 22px;
+        height: 22px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin-top: 15px;
    }
 
-   &__percent--seventy{
-       right: 24%;
-   }
-   &__percent--fifty{
-    right: 44%;
+   &__progress {
+        border:0;
+        width: 100%;
+        height: 4px;
     }
-    &__percent--forty{
-        right: 54%;
+
+    &__progress::-webkit-progress-bar {
+        background: #5b5959;
+    }
+
+    &__progress::-webkit-progress-value {
+        background: #fff;
+    }
+
+    &__progress::-moz-progress-bar {
+        background: #fff;
     }
 }
+
+
+
+
+
+@media (min-width: 1000px) and (max-width: 1279px) {
+  
+    .skills{
+
+        &__name{
+            font-size: 20px;
+        }
+    }
+    
+    }
+    
+    
+    
+    @media (min-width: 768px) and (max-width: 999px) {
+      
+        .skills{
+
+            &__name{
+                font-size: 20px;
+            }
+
+            &__number{
+                font-size: 20px;
+            }
+
+            &__circle{
+                width: 18px;
+                height: 18px;
+                bottom: -8px;
+            }
+        }
+        
+     }
+
+
+
+     @media (min-width: 500px) and (max-width: 767px) {
+      
+        .skills{
+            // display: grid;
+            // justify-content: center;
+            
+            &__inner{
+                padding: 60px;
+                // display: grid;
+                // grid-template-columns: 1fr;
+                // width: 70%;
+                // justify-content: center;
+            }
+
+            &__list{
+                grid-gap: 40px;
+                // width: 70%;
+            }
+
+            &__name{
+                font-size: 20px;
+            }
+
+            &__number{
+                font-size: 20px;
+            }
+
+            &__circle{
+                width: 18px;
+                height: 18px;
+                bottom: -8px;
+            }
+        }
+        
+     }
+
+
+
+     @media (min-width: 320px) and (max-width: 499px) {
+      
+        .skills{
+
+            &__inner{
+                padding: 60px 0 60px 0;
+            }
+
+            &__list{
+                grid-gap: 40px;
+            }
+
+            &__name{
+                font-size: 18px;
+            }
+
+            &__number{
+                font-size: 20px;
+            }
+
+            &__circle{
+                width: 18px;
+                height: 18px;
+                bottom: -8px;
+            }
+        }
+        
+     }
