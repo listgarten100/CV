@@ -424,8 +424,8 @@ body {
   padding: 20px 10px;
   display: grid;
   grid-gap: 10px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .work__desc--white {
@@ -483,8 +483,8 @@ body {
   background-color: #abaaaa;
   display: grid;
   margin-right: 30px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .work__decor-vertStick--white {
@@ -597,6 +597,7 @@ body {
   -webkit-transform-origin: 50% 50%;
       -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
+  stroke-dasharray: 219.8;
   -webkit-animation: big 1.5s ease-in-out;
           animation: big 1.5s ease-in-out;
 }
@@ -658,8 +659,8 @@ body {
           align-items: center;
   padding: 10px;
   grid-gap: 10px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .education__item::before {
@@ -726,8 +727,8 @@ body {
   justify-self: center;
   display: grid;
   grid-gap: 10px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .education__border-circle {
@@ -1028,6 +1029,7 @@ body {
   border: 0;
   width: 100%;
   height: 4px;
+  background: #5b5959;
 }
 
 .skills__progress::-webkit-progress-bar {
@@ -1633,7 +1635,7 @@ body {
     margin-right: 0px;
   }
   .menu__link {
-    font-size: 15px;
+    font-size: 13px;
   }
   .headline {
     font-size: 28px;
@@ -1912,7 +1914,7 @@ body {
     margin-right: 0px;
   }
   .menu__link {
-    font-size: 14px;
+    font-size: 12px;
   }
   .headline {
     font-size: 28px;

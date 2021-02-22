@@ -77,7 +77,7 @@ getProgressSkills();
 
 
 //languages progress bar
-function getProgressLang() {
+function getProgressLang(circleLength) {
 
     const circleDiagramList = document.querySelector('.lang__list');
     const circleDiagrams = document.querySelectorAll('.lang__circle');
@@ -90,16 +90,9 @@ function getProgressLang() {
 
         for(let i = 0; i < circleDiagramList.childElementCount; i++) {
     
-            // let circleLength = +circleDiagrams[i].style.strokeDasharray;
-            // let circleLength = +circleDiagrams[i].getAttribute('style', 'strokeDasharray');
-            // let lengthOperation = circleLength - (circleLength / 100 * +circlePercentsValue[i].innerHTML.slice(0, -1)).toFixed(0);
+            let lengthOperation = circleLength - (circleLength / 100 * +circlePercentsValue[i].innerHTML.slice(0, -1)).toFixed(0);
 
-            let lengthOperation = 219 - (219 / 100 * +circlePercentsValue[i].innerHTML.slice(0, -1)).toFixed(0);
-            
-            // console.log(circleLength);
-    
-            // let start = +circleLength.toFixed(0);
-            let start = 219;
+            let start = circleLength;
             let startPercent = 0;
             
             setInterval(() => {
@@ -125,16 +118,8 @@ function getProgressLang() {
     }
     window.addEventListener('scroll', getScrollCheck);
 }
-getProgressLang();
+getProgressLang(219);
 
 
     
  
-
-const circleDiagrams = document.querySelector('.lang__circle');
-
-let circleLength = +circleDiagrams.getAttribute('style', 'stroke-dasharray');
-
-console.log(circleLength);
-
-console.log(circleDiagrams.getAttribute('style'));
